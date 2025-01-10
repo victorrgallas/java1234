@@ -1,0 +1,15 @@
+public class InverterString {
+    public static void main(String[] args) {
+        String original = "Exemplo de String";
+
+        String invertida = inverterString(original);
+        
+        System.out.println("String original: " + original);
+        System.out.println("String invertida: " + invertida);
+    }
+
+    public static String inverterString(String str) {
+        StringBuilder sb = new StringBuilder(str);
+        return sb.reverse().toString();  // Reverte a string e retorna
+    }
+}
